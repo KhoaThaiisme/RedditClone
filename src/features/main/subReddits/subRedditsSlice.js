@@ -16,7 +16,7 @@ const options = {
     },
 };
 
-export const subRedditSlice = createSlice(options);
+export const subRedditsSlice = createSlice(options);
 
 export const { addSubReddit, changeSelectedSubReddit } = subRedditsSlice.actions;
 
