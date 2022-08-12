@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './searchBar.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { newSearchTerm, selectSearchTerm } from ;
+import { newSearchTerm, selectSearchTerm } from './searchBarSlice';
 
 export function SearchBar () {
     const dispatch = useDispatch();
@@ -22,7 +22,7 @@ export function SearchBar () {
             </input>
             <i  id={searchTerm.length === 0 ? styles.search : styles.circle}
                 className={ searchTerm.length === 0 ? 'fas fa search' : 'far fa-times-cicle'}
-                onClick={() => dispatch(newSearchTerm())}
+                onClick={() => dispatch(newSearchTerm())}></i>
         </div>
     )
 }
