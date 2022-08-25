@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import styles from './main.css';
 import { SubReddits } from './subReddits/subReddits';
 import { Post } from './posts/post/post';
-import { PostList } from './posts/postList';
+import { PostsList } from './posts/postsList';
 import { useSelector } from 'react-redux';
 import { selectTheme } from '../header/toggleTheme/toggleSlice';
 
@@ -16,7 +16,7 @@ export function Main() {
             <section id={styles.posts}>
                 <Switch >
                     <Route exact path='/'>
-                        <PostList/>
+                        <PostsList/>
                     </Route>
                     <Route exact path='/Post'>
                         <Post/>

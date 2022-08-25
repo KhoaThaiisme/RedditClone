@@ -1,0 +1,41 @@
+#comment {
+    border: 1px solid rgb(200, 200, 200);
+    width: 95%;
+    margin: 10px auto; 
+}
+#comment p {
+    white-space: normal;
+    text-overflow: initial;
+    overflow: auto;
+}
+
+.commentAuthorDark {
+    font-weight: bold;
+    color:rgb(243,97,0);
+}
+.commentAuthorLight {
+    font-weight: bold;
+    color:rgb(95,158,160);
+}
+
+.isNotShown {
+    display: none;
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentDate {
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.darkTheme {
+    background-color: rgb(30,30,30);   
+}
+
+.lightTheme { 
+    background-color: rgb(240, 240, 240);
+}

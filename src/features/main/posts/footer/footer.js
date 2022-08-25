@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './footer.css';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import {dateCalculator};
+import { dateCalculator } from '../../../utilities/utilities';
 import { Comments } from '../comments/comments';
 import { selectTheme } from '../../../header/toggleTheme/toggleSlice';
 

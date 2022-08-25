@@ -2,22 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { selectPost } from './postSlice';
 import { useSelector } from 'react-redux';
-import { selectSubReddit, subRedditSlice } from '../../subReddits/subRedditsSlice';
+import { selectSubReddit } from '../../subReddits/subRedditsSlice';
 import { selectPosts } from '../postsSlice';
 import { Video } from '../video/video';
 import { Footer } from '../footer/footer';
 import { selectTheme } from '../../../header/toggleTheme/toggleSlice';
 import styles from './post.css';
-import { PostsList } from '../postsList';
 
-export const Post = (props) => {
+
+export const Post = () => {
 
     const postId = useSelector(selectPost);
-    const selectedSubReddit = useSelector(subRedditSlice);
+    const selectedSubReddit = useSelector(selectSubReddit);
     const posts = useSelector(selectPosts);
     const theme =  useSelector(selectTheme);
 
-    const selectPost = posts.filter(post =>  post.name === postId);
+    const selectedPost = posts.filter(post =>  post.name === postId);
 
     function handleImgError({target}) {
         target.style.display = 'none';

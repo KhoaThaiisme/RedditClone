@@ -1,0 +1,44 @@
+.postInfos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 5% auto;
+}
+
+.postInfos li {
+    display: inline;
+    
+}
+
+.postInfos li:last-child {
+    display: inline-flex;
+    align-items: center;
+}
+
+.postInfos li:last-child span {
+    color: inherit;
+    font-weight: normal;
+}
+
+.postInfos li span {
+    font-weight: 900;
+}
+
+.commentsIcon:hover {
+    cursor: pointer;
+}
+.darkTheme li {
+    color: rgb(100,100,100);
+}
+.darkTheme li span {
+    color: rgb(243,97,0);
+}
+.lightTheme li {
+    color: inherit;
+}
+.lightTheme li span {
+    color: rgb(95,158,160);
+}

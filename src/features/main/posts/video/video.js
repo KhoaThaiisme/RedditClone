@@ -5,7 +5,7 @@ import styles from './video.css';
 export const Video = (props) => {
     const { postMedia, postUrl } = props;
 
-    const viddeoSource = () => {
+    const videoSource = () => {
         if (postMedia && postMedia.reddit_video !== undefined) {
             return (
                 <video width='100%' controls>

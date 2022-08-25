@@ -1,0 +1,38 @@
+#postsItem {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 2%;
+}
+
+#postsItem img {
+    width: 100%;
+    height: auto;
+}
+
+.singlePost {
+    border: 1px solid black;
+    margin: 2.5%;
+}
+.singlePost h2 {
+    margin: 2%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.singlePost a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.video{
+    display: block;
+}
+.noVideo {
+    display: none;
+}
+@media only screen and (min-width: 660px) {
+    #posts {
+        margin: 5%;
+        margin-right: 0%;
+    }
+}

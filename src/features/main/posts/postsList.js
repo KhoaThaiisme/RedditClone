@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '';
+import styles from './postsList.css';
 import { getSubredditPosts } from '../../../app/API/Reddit';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { selectSearchTerm } from '../../header/searchBar/searchBarSlice';
+import { selectPosts } from '../posts/postsSlice';
+import { selectSubReddit } from '../subReddits/subRedditsSlice';
+import { addPosts } from './postsSlice';
+import { Footer } from './footer/footer';
+import { Video } from './video/video';
+import { changeActivePostId } from './post/postSlice';
 
 export function PostsList() {
     const posts = useSelector(selectPosts);

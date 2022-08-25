@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '';
+import styles from './subReddits.css';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getSubReddits } from '../../../app/API/Reddit';
@@ -8,9 +8,9 @@ import {
     selectSubReddits,
     addSubReddit,
     changeSelectedSubReddit
-} from './subRedditSlice';
+} from './subRedditsSlice';
 
-export function SubReddit() {
+export function SubReddits() {
     const dispatch = useDispatch();
     const subReddits = useSelector(selectSubReddits);
     const selectedSubReddit = useSelector(selectSubReddit);

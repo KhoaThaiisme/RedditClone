@@ -1,0 +1,23 @@
+#toggle i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+#toggle p {
+    width: 75px;
+    margin: 10%;
+}
+.lightTheme i {
+    color: rgb(30, 30, 30);
+
+}
+.darkTheme {
+    color: inherit;
+}
+@media only screen and (max-width: 425px) {
+    #toggle p {
+        display: none;
+    }
+    #toggle i {
+        font-size: 2rem;
+    }
+}

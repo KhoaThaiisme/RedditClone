@@ -1,0 +1,29 @@
+#searchBar {
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+#searchBar input {
+    border: transparent;
+    height: 30px;
+    margin: 10px;
+}
+#searchBar input:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(30, 30, 30);
+}
+#search {
+    opacity: 0.5;
+    font-size: 1.25 rem;
+    margin: 10px;
+}
+#circle {
+    opacity: 0.5;
+    font-size: 1.25rem;
+    margin: 10px;
+}
+@media only screen and (min-width: 660px) {
+    #searchBar input{
+        width: 300px;
+    }
+}

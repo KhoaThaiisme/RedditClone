@@ -4,6 +4,7 @@ import styles from './comments.css';
 import { useSelector } from 'react-redux'; 
 import { selectTheme } from '../../../header/toggleTheme/toggleSlice';
 import { getPostComments } from '../../../../app/API/Reddit';
+import { dateCalculator } from '../../../utilities/utilities';
 
 export const Comments = (props) => {
     const [comments, setComments ] = useState([]);

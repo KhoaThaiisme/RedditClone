@@ -1,0 +1,33 @@
+main {
+    max-width: 1024px;
+    margin: 1% auto;
+    border: 1px solid black;
+    overflow: scroll;
+}
+.ligthTheme {
+    background-color: whitesmoke;
+    color: black;
+}
+.lightTheme h1, .lightTheme h2 {
+    color: rgb(95, 158, 160)
+}
+.darkTheme {
+    background-color: rgb(30, 30, 30);
+    color: rgb(240, 240, 240);
+}
+.darkTheme h1, .darkTheme h2 {
+    color: rgb(243, 97, 0);
+}
+#posts {
+    clear: both;
+    width: 100%;
+}
+
+@media only screen and (min-width: 660px) {
+    #posts {
+        clear: none;
+        float: left;
+        width: 65%;
+        margin: auto;
+    }
+}

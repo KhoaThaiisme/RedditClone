@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from 'header.css';
+import styles from './header.css';
 import { Link } from 'react-router-dom';
-import redditLogo from '';
+import redditLogo from './reddit-logo.png';
 import { SearchBar } from './searchBar/searchBar';
 import { ToggleTheme } from './toggleTheme/toggleTheme';
 import { useDispatch, useSelector } from 'react-redux';
-import { changeSelectedSubReddit } from ''
+import { changeSelectedSubReddit } from '../main/subReddits/subRedditsSlice';
 import { selectTheme } from './toggleTheme/toggleSlice';
 
 export function Header() {
@@ -18,10 +18,13 @@ export function Header() {
     return (
         <header className={theme ? styles.darkTheme : styles.lightTheme}>
             <Link to='/'>
-                <div onClick={handleClick} id={styles.logo}></div>
+                <div onClick={handleClick} id={styles.logo}>
+                    <img id={styles.redditLogo} src={redditLogo} alt='reddit logo'/>
+                    <p><span className={styles.bolder}>Reddit</span> Client</p> 
+                </div>
             </Link>
-            <SearchBar/>
-            <ToggleTheme/>
+            <SearchBar />
+            <ToggleTheme />
         </header>
-    )
-}
+    );
+};

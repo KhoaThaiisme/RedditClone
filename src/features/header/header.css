@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px slid black;
+    height: 75px;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 50px;
+}
+header a {
+    text-decoration-line: none;
+    color: inherit
+}
+#logo {
+    width: 150px;
+    justify-content: space-between;
+}
+#logo p {
+    margin: 10%;
+}
+.bolder{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.lightTheme {
+    background-color: rgb(95, 158, 160);
+    color: rgb(255, 248, 220);
+}
+.darkTheme {
+    background-color: rgb(30, 30, 30);
+    color: rgb(1240, 240, 240);
+}
+
+@media only screen and (max-width: 480px){
+    header p {
+        display: none;
+    }
+    #logo {
+        width: 50px;
+    }
+}
